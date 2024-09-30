@@ -4,41 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:layout_marginHorizontal="15dp"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_marginBaseline="15dp"
-        tools:layout_editor_absoluteX="-67dp"
-        tools:layout_editor_absoluteY="0dp">
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="213dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="buscar un producto"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="39dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal" >
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="28dp"
+        android:layout_height="39dp"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="38dp" />
 
-            <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:id="@+id/imageFilterView3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="perfumes "
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="166dp" />
 
-            <EditText
-                android:id="@+id/editTextText4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="30dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="buscar producto"
-                android:inputType="text" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pantalones "
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="166dp" />
 
-        </LinearLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zapatillas"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="258dp" />
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ropa deportiva "
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="polos "
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="muebles "
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="265dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
